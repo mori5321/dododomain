@@ -48,6 +48,7 @@ data AcknowledgementLetter = AcknowledgementLetter
 
 
 -- Workflow (たぶんあとでUsecase Layerになるやつ)
+-- Input, Output は Eventとして表現すべきかもしれない
 placeOrderWorkflow :: UnvalidatedOrder -> Either InvalidOrder PlacedOrder -- SideEffectを型で表現したい
 placeOrderWorkflow = validateOrder >=> priceOrder >=> sendAcknowledgement
 

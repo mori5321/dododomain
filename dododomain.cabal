@@ -26,6 +26,7 @@ source-repository head
 library
   exposed-modules:
       Lib
+      Order
   other-modules:
       Paths_dododomain
   hs-source-dirs:
